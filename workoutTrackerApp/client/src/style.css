@@ -1,0 +1,51 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.App {
+  text-align: center;
+}
+
+.nav-container {
+  margin-bottom: 1px solid black;
+  height: 30px;
+  margin-top: 0px;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid black;
+  background-color: #0a1929;
+}
+.nav-container div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav-container h2 {
+  color: white;
+}
+.nav-container h2:hover {
+  transition: all 0.3s ease-in;
+  color: #64a8ec;
+}
+
+.btn-container Button {
+  margin: 5px;
+}
+.learn-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.learn-container div {
+  margin: 1rem;
+  width: 580px;
+}

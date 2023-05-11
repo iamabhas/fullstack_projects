@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main class="main-container">
+      <h1>Electric Guitar Api</h1>
+      <div class="btn-container">
+        <button class="all-btn">All Guitars</button>
+        <button class="sss-btn">SSS Type Guitars</button>
+        <button class="hss-btn">HSS Type Guitars</button>
+        <button class="hsh-btn">HSH Type Guitars</button>
+        <button class="hh-btn">HH Type Guitars</button>
+      </div>
+    </main>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
+      integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      const allBtn = document.querySelector(".all-btn");
+      const sssBtn = document.querySelector(".sss-btn");
+      const hssBtn = document.querySelector(".hss-btn");
+      const hshBtn = document.querySelector(".hsh-btn");
+      const hhBtn = document.querySelector(".hh-btn");
+
+      allBtn.addEventListener("click", () => {
+        window.location.href = "http://localhost:3001/api/guitars";
+      });
+
+      sssBtn.addEventListener("click", () => {
+        window.location.href = "http://localhost:3001/api/guitars?type=SSS";
+      });
+
+      hssBtn.addEventListener("click", () => {
+        window.location.href = "http://localhost:3001/api/guitars?type=HSS";
+      });
+
+      hshBtn.addEventListener("click", () => {
+        window.location.href = "http://localhost:3001/api/guitars?type=HSH";
+      });
+
+      hhBtn.addEventListener("click", () => {
+        window.location.href = "http://localhost:3001/api/guitars?type=HH";
+      });
+    </script>
+  </body>
+</html>
