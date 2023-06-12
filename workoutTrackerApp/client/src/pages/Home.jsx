@@ -1,7 +1,7 @@
 import { React } from "react";
-import { useNavigate } from "react-router";
+import Frontsvg from "../components/svg/Frontsvg";
+import Backsvg from "../components/svg/Backsvg";
 const Home = () => {
-  const navigate = useNavigate();
   return (
     <main className="home-container">
       <h1>
@@ -15,29 +15,16 @@ const Home = () => {
       <div style={{ fontSize: "1.1rem" }}>
         This app allows you to store your workouts in sessions . Each session
         can have multiple workouts and you can set 'sets' and 'reps' for each
-        workout .
+        workout.
         <br />
-        🔵 If you're a beginner and want to learn about different exercises ,
-        the do and dont's in the gym...Click here 👉🏽{" "}
-        <span
-          style={{ color: "blue" }}
-          onClick={() => {
-            navigate("/learn");
-          }}
-        >
-          🔗
-        </span>{" "}
-        <br />
-        🔵 If you want to learn about the different features of this app...Click
-        here 👉🏽{" "}
-        <span
-          style={{ color: "blue" }}
-          onClick={() => {
-            navigate("/about");
-          }}
-        >
-          🔗
-        </span>
+        <strong>Click on "About" to know more</strong>
+      </div>
+      <h2 style={{ color: "red" }}>
+        Click on a body part you want to learn about and train
+      </h2>
+      <div className="svg-container">
+        <Frontsvg />
+        <Backsvg />
       </div>
     </main>
   );

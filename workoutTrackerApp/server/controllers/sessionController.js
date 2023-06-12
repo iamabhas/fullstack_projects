@@ -1,9 +1,10 @@
-const { Session } = require("../models/sessionModel");
+const { Session, Workout } = require("../models/sessionModel");
 const mongoose = require("mongoose");
 
 //GET sessions
 const getSessions = async (req, res) => {
-  const sessions = await Session.find({}).sort({ createdAt: -1 });
+  const user_id = req.user._id;
+  const sessions = await Session.find({ user_id }).sort({ createdAt: -1 });
   res.status(200).json(sessions);
 };
 
@@ -28,12 +29,14 @@ const getSession = async (req, res) => {
 const createSession = async (req, res) => {
   const { title, workoutType, days, workouts, completed } = req.body;
   try {
+    const user_id = req.user._id;
     const session = await Session.create({
       title,
       workoutType,
       days,
       workouts,
       completed,
+      user_id,
     });
     res.status(200).json(session);
   } catch (err) {

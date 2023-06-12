@@ -8,9 +8,9 @@ const {
   updateSessionDeleteWorkout,
   updateSessionSetComplete,
 } = require("../controllers/sessionController");
-
+const apiAuth = require("../middleware/apiAuth");
 const router = express.Router();
-
+router.use(apiAuth);
 // GET sessions
 router.get("/", getSessions);
 

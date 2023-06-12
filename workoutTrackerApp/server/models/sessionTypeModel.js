@@ -29,7 +29,14 @@ const sessionTypes = [
 ];
 
 // Insert workout types
-SessionType.insertMany(sessionTypes)
+SessionType.countDocuments({})
+  .then((count) => {
+    if (count === 0) {
+      return SessionType.insertMany(sessionTypes);
+    } else {
+      console.log("SessionType already exists");
+    }
+  })
   .then(() => {
     console.log("Workout types inserted successfully");
   })

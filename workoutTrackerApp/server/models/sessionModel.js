@@ -28,7 +28,7 @@ const sessionSchema = new Schema(
       required: true,
     },
     days: {
-      type: [String],
+      type: String,
       required: true,
     },
     workouts: {
@@ -38,6 +38,10 @@ const sessionSchema = new Schema(
     completed: {
       type: Boolean,
       default: false,
+    },
+    user_id: {
+      type: String,
+      required: true,
     },
   },
   { timestamps: true }
