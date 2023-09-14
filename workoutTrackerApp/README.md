@@ -1,5 +1,5 @@
 # Workout Tracker
-This projects show cases a system which lets user add sessions of different types and add workouts with sets and reps . It also uses jwt for authetication 
+This projects show cases a system which lets user add sessions of different types and add workouts with sets and reps . It also uses jwt for authentication 
 
 ## How to Run the Project
 
