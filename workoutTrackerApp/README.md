@@ -22,7 +22,7 @@ npm start
 ```bash
 cd client/
 npm install
-npm run dev
+npm run start
 ```
 ## 4. .env file (Add this file)
 ```bash
