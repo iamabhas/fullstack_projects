@@ -1,5 +1,5 @@
-# JWT Authentication with React and Node
-This projects show cases user authentication using jwt , how access tokens are used to authorize user ,authenticate api and how refresh tokens are used when access tokens are expired
+# Workout Tracker
+This projects show cases a system which lets user add sessions of different types and add workouts with sets and reps . It also uses jwt for authetication 
 
 ## How to Run the Project
 
@@ -9,7 +9,7 @@ Follow these steps to run the project on your local machine:
 
 ```bash
 git clone https://github.com/iamabhas/fullstack_projects.git
-cd fullstack_projects/jwtAuth/
+cd fullstack_projects/workoutTrackerApp/
 ```
 ## 2. Run Backend
 
@@ -24,5 +24,10 @@ cd client/
 npm install
 npm run dev
 ```
+## 4. .env file (Add this file)
+```bash
+PORT=<Your Port Number>
+MONGO_URI=mongodb+srv://<Your username>:<Your Password>cluster0.hlull91.mongodb.net/?retryWrites=true&w=majority
 
+```
 
