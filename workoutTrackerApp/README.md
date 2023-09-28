@@ -2,7 +2,7 @@
 This projects show cases a system which lets user add sessions of different types and each session has multiple workouts with sets and reps . It also uses jwt for authentication 
 
 ## Click for Demo Video :
-[![WORKOUT TRACKER APP](https://raw.githubusercontent.com/iamabhas/fullstack_projects/main/workoutTrackerApp/WTA.png)](https://youtu.be/qVqy4hJ4qZ4)
+[![WORKOUT TRACKER APP](https://raw.githubusercontent.com/iamabhas/fullstack_projects/main/workoutTrackerApp/WTA.png)](https://www.youtube.com/watch?v=txYrkUTeZIk)
 
 ## How to Run the Project
 
